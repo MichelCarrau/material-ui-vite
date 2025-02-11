@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@mui/icons-material": "^6.4.3"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
+  },
+  "name": "material-ui-vite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
