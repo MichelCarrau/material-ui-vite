@@ -1,6 +1,6 @@
 import * as React from 'react';
 import ComponenteEncabezado from './ComponenteEncabezado';
-import ListaProductos from './components/ListaProductos';
+import ListaProductos from './Components/ListaProductos';
 
 export default function App() {
   return (
