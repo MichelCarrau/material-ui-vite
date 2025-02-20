@@ -3,7 +3,8 @@ import Switch from '@mui/material/Switch'
 import { useState } from 'react'
 import Typography from '@mui/material/Typography'
 import { Divider } from '@mui/material'
-import ListaVerduras from './productos/ListaVerduras'
+import ListaVerduras from './Productos/ListaVerduras'
+
 
 const ListaProductos = () => {
 
@@ -31,7 +32,7 @@ const ListaProductos = () => {
 		}
 			<Divider color="secondary" />
 
-			<ListaVerduras/>
+			<ListaVerduras />
 
 	  </div>
 	)

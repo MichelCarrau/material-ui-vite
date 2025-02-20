@@ -14,6 +14,9 @@ export const AlumnoPromedio = () => {
             <h1>resultado: {resultado}</h1>
             </>
         );
+
+
+        
     } else {
         return (
             <>

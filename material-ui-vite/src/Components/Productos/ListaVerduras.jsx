@@ -1,5 +1,53 @@
 import React, { useState } from 'react';
 import { Typography, Divider, Button, Table, TableHead, TableBody, TableRow, TableCell, TableContainer, Paper, Select, MenuItem } from '@mui/material';
+import ListaProductoDialogo from './ListaProductoDialogo';
+
+export const data = {
+    "store": {
+        "book": [
+            {
+                "category": "reference",
+                "author": "Nigel Rees",
+                "title": "Sayings of the Century",
+                "price": 8.95,
+                "in-stock": true,
+                "sold": true
+            },
+            {
+                "category": "fiction",
+                "author": "Evelyn Waugh",
+                "title": "Sword of Honour",
+                "price": 12.99,
+                "in-stock": false,
+                "sold": true
+            },
+            {
+                "category": "fiction",
+                "author": "Herman Melville",
+                "title": "Moby Dick",
+                "isbn": "0-553-21311-3",
+                "price": 8.99,
+                "in-stock": true,
+                "sold": false
+            },
+            {
+                "category": "fiction",
+                "author": "J. R. R. Tolkien",
+                "title": "The Lord of the Rings",
+                "isbn": "0-395-19395-8",
+                "price": 22.99,
+                "in-stock": false,
+                "sold": false
+            }
+        ],
+        "bicycle": {
+            "color": "red",
+            "price": 19.95,
+            "in-stock": true,
+            "sold": false
+        }
+    }
+}
 
 export default function ListaDeVerduras() {
     const [verduras] = useState([
@@ -18,7 +66,6 @@ export default function ListaDeVerduras() {
             <h2>Lista de Verduras</h2>
             <Divider color="secondary" />
 
-            {}
             <Typography variant="h7">Selecciona una verdura:</Typography>
             <Select
                 value={verduraSeleccionada}
@@ -33,7 +80,6 @@ export default function ListaDeVerduras() {
                 ))}
             </Select>
 
-            {}
             {verduraSeleccionada && (
                 <Typography variant="h6" style={{ marginTop: 20 }}>
                     Verdura seleccionada: {verduraSeleccionada}
@@ -76,6 +122,9 @@ export default function ListaDeVerduras() {
                     </Table>
                 </TableContainer>
             )}
+
+            <Divider color='primary'/>
+            <ListaProductoDialogo data={data.store} />
         </div>
     );
 }
